@@ -58,29 +58,5 @@ function draw() {
 	song_2_status = song_2.isPlaying();
 	fill("#e85aed");
 	stroke("#e85aed");
-	if(score_left_wrist > 0.2)
-    {
-		circle(left_wrist_x,left_wrist_y,20);
-			song.stop();
-	if(song_status == false)
-    {
-			song_2.play();
-			document.getElementById("song").innerHTML = "Playing - Peter Pan";
-		}
-	}
-    song_status = song.isPlaying();
-	fill("#e85aed");
-	stroke("#e85aed");
-	if(score_right_wrist > 0.2)
-    {
-		circle(right_wrist_x,right_wrist_y,20);
-			song_2.stop();
-	if(song_2_status == false)
-    {
-			song.play();
-			document.getElementById("song").innerHTML = "Playing - Harry Potter";
-		}
-	}
-
 }
 
